@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A3C85D81-FD5A-4F92-9310-2C8704B1CE7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gpio", "gpio", "{68DF8F08-D3AB-4259-912F-D628B9932E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryPi.Gpio", "src\gpio\RaspberryPi.Gpio\RaspberryPi.Gpio.csproj", "{948490CA-7D2E-43F5-91F8-3FF2FBEB3CBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{948490CA-7D2E-43F5-91F8-3FF2FBEB3CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948490CA-7D2E-43F5-91F8-3FF2FBEB3CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948490CA-7D2E-43F5-91F8-3FF2FBEB3CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948490CA-7D2E-43F5-91F8-3FF2FBEB3CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{68DF8F08-D3AB-4259-912F-D628B9932E24} = {A3C85D81-FD5A-4F92-9310-2C8704B1CE7F}
+		{948490CA-7D2E-43F5-91F8-3FF2FBEB3CBE} = {68DF8F08-D3AB-4259-912F-D628B9932E24}
+	EndGlobalSection
+EndGlobal
