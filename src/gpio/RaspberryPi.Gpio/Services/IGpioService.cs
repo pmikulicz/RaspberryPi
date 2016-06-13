@@ -3,5 +3,7 @@
     public interface IGpioService
     {
         bool IsAvailable();
+
+        PlatformType Platform { get; }
     }
 }

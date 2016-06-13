@@ -2,7 +2,7 @@
 
 namespace RaspberryPi.Gpio.Exceptions
 {
-    public class OsVersionMismatchException : Exception
+    public class PlatformTypeMismatchException : Exception
     {
         //
         // For guidelines regarding the creation of new exception types, see
@@ -11,15 +11,15 @@ namespace RaspberryPi.Gpio.Exceptions
         //    http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dncscol/html/csharp07192001.asp
         //
 
-        public OsVersionMismatchException()
+        public PlatformTypeMismatchException()
         {
         }
 
-        public OsVersionMismatchException(string message) : base(message)
+        public PlatformTypeMismatchException(string message) : base(message)
         {
         }
 
-        public OsVersionMismatchException(string message, Exception inner) : base(message, inner)
+        public PlatformTypeMismatchException(string message, Exception inner) : base(message, inner)
         {
         }
     }

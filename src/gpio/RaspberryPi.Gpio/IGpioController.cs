@@ -7,8 +7,6 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-using RaspberryPi.Gpio.Services;
-
 namespace RaspberryPi.Gpio
 {
     /// <summary>
@@ -22,11 +20,5 @@ namespace RaspberryPi.Gpio
         /// <param name="pinNumber">Pin number which is going to be opened</param>
         /// <returns>Instance of <see cref="IPin"/> with specified number</returns>
         IPin OpenPin(int pinNumber);
-
-        /// <summary>
-        /// Sets <see cref="IGpioService"/> for the controller
-        /// </summary>
-        /// <param name="gpioService"></param>
-        void SetGpioService(IGpioService gpioService);
     }
 }

@@ -37,13 +37,19 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exceptions\OsVersionMismatchException.cs" />
+    <Compile Include="Exceptions\PlatformTypeMismatchException.cs" />
     <Compile Include="GpioController.cs" />
+    <Compile Include="GpioControllerFactory.cs" />
+    <Compile Include="GpioControllerOptions.cs" />
+    <Compile Include="GpioControllerOptionsConfigurator.cs" />
     <Compile Include="IGpioController.cs" />
+    <Compile Include="IGpioControllerFactory.cs" />
+    <Compile Include="IGpioControllerOptionsConfigurator.cs" />
     <Compile Include="IPin.cs" />
     <Compile Include="Pin.cs" />
     <Compile Include="PinMode.cs" />
     <Compile Include="PinValue.cs" />
+    <Compile Include="PlatformType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\LinuxGpioService.cs" />
     <Compile Include="Services\WindowsGpioService.cs" />

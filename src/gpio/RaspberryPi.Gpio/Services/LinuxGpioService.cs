@@ -6,5 +6,7 @@
         {
             throw new System.NotImplementedException();
         }
+
+        public PlatformType Platform => PlatformType.Linux;
     }
 }
