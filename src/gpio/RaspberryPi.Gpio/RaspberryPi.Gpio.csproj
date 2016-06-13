@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{c833cf92-0723-4865-9f1a-ebbd07f07866}</ProjectGuid>
+    <ProjectGuid>{C833CF92-0723-4865-9F1A-EBBD07F07866}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RaspberryPi.Gpio</RootNamespace>
@@ -37,8 +37,17 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Exceptions\OsVersionMismatchException.cs" />
+    <Compile Include="GpioController.cs" />
+    <Compile Include="IGpioController.cs" />
+    <Compile Include="IPin.cs" />
+    <Compile Include="Pin.cs" />
+    <Compile Include="PinMode.cs" />
+    <Compile Include="PinValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\LinuxGpioService.cs" />
+    <Compile Include="Services\WindowsGpioService.cs" />
+    <Compile Include="Services\IGpioService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -48,5 +57,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
 </Project>

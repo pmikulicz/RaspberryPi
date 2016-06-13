@@ -7,14 +7,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-using System;
-
 namespace RaspberryPi.Gpio
 {
     /// <summary>
     /// Represents interface of general-purpose input/output pin
     /// </summary>
-    public interface IPin : IDisposable
+    public interface IPin
     {
         /// <summary>
         /// Writes specified value to the pin

@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Runtime.Serialization;
 
 namespace RaspberryPi.Gpio.Exceptions
 {
-    [Serializable]
     public class OsVersionMismatchException : Exception
     {
         //
@@ -22,12 +20,6 @@ namespace RaspberryPi.Gpio.Exceptions
         }
 
         public OsVersionMismatchException(string message, Exception inner) : base(message, inner)
-        {
-        }
-
-        protected OsVersionMismatchException(
-            SerializationInfo info,
-            StreamingContext context) : base(info, context)
         {
         }
     }

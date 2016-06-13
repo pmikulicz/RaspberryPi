@@ -18,9 +18,9 @@ namespace RaspberryPi.Gpio
             if (gpioService == null)
                 throw new ArgumentNullException(nameof(gpioService));
 
-            if (Environment.OSVersion.Platform != gpioService.Platform)
-                throw new OsVersionMismatchException(
-                    $"Cannot set up gpio service dedicated for os platform '{gpioService.Platform}' because current os platform is '{Environment.OSVersion.Platform}'");
+            //            if (Environment.OSVersion.Platform != gpioService.Platform)
+            //                throw new OsVersionMismatchException(
+            //                    $"Cannot set up gpio service dedicated for os platform '{gpioService.Platform}' because current os platform is '{Environment.OSVersion.Platform}'");
 
             _gpioService = gpioService;
         }

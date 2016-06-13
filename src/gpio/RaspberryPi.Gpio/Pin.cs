@@ -29,10 +29,5 @@ namespace RaspberryPi.Gpio
         }
 
         public PinMode Mode { get; set; }
-
-        public void Dispose()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }
