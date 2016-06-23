@@ -27,7 +27,7 @@ namespace RaspberryPi.Gpio
         /// Sets platform type under which the default gpio service will be selected
         /// </summary>
         /// <param name="platformType"></param>
-        /// <returns></returns>
+        /// <returns>Instance of <see cref="IGpioControllerOptionsConfigurator"/></returns>
         IGpioControllerOptionsConfigurator SetPlatformType(PlatformType platformType);
     }
 }
