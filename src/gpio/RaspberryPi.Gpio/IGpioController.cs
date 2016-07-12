@@ -17,7 +17,8 @@ namespace RaspberryPi.Gpio
         /// <summary>
         /// Opens specified pin and returns it's instance
         /// </summary>
-        /// <param name="pinNumber">Pin number which is going to be opened</param>
+        /// <param name="pinNumber">Pin number which is going to be opened.
+        /// Default pin mode is set up for input</param>
         /// <returns>Instance of <see cref="IPin"/> with specified number</returns>
         IPin OpenPin(int pinNumber);
     }
